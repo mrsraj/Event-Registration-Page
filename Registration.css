@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,17 +12,17 @@ body{
     background-color: rgb(74, 66, 81);
 }
 
-.container{
+.container {
     max-width: 650px;
     padding: 28px;
     margin: 0 28px;
     border-radius: 0px;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
 }
 
-h2{
+h2 {
     font-size: 26px;
     font-weight: bold;
     text-align: left;
@@ -31,30 +31,32 @@ h2{
     border-bottom: 1px solid silver;
 }
 
-.content{
+.content {
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0;
     height: auto;
 }
 
-.input-box{
+.input-box {
     width: 50%;
     padding-bottom: 15px;
 }
 
-.input-box label,.gender-title{
-  width: 95%;
-  color: #fff;
-  font-weight: bold;
-  margin: 5px 0;
+.input-box label,
+.gender-title {
+    width: 95%;
+    color: #fff;
+    font-weight: bold;
+    margin: 5px 0;
 }
 
-.gender-title{
+.gender-title {
     font-size: 16px;
 }
 
-.input-box input,select{
+.input-box input,
+select {
     height: 45px;
     width: 95%;
     padding: 0 10px;
@@ -62,17 +64,18 @@ h2{
     outline: none;
 }
 
-.gender-category label,option{
+.gender-category label,
+option {
     padding: 0 20px 0 5px;
     font-size: 14px;
 }
 
-.gender-category{
+.gender-category {
     color: beige;
     text-align: left;
 }
 
-.alert{
+.alert {
     font-size: 16px;
     color: #fff;
     font-style: italic;
@@ -80,13 +83,13 @@ h2{
     padding: 10px;
 }
 
-.button-container{
+.button-container {
     margin: 15px 0;
 }
 
-.button-container button{
+.button-container button {
     width: 100%;
-    margin-top:10px ;
+    margin-top: 10px;
     padding: 10px;
     display: block;
     font-size: 20px;
@@ -95,31 +98,30 @@ h2{
     border-radius: 5px;
 }
 
-.button-container button:hover{
+.button-container button:hover {
     background-color: rgba(97, 136, 81, 0.7);
     transition-delay: 0.3;
     color: #fff;
 }
 
-@media(max-width:600px){
+@media(max-width:600px) {
 
-    .container{
+    .container {
         min-width: 280px;
     }
-       .content{
-          max-height: 380px;
-          overflow: auto;
 
-       }
+    .content {
+        max-height: 380px;
+        overflow: auto;
 
-       .input-box{
+    }
+
+    .input-box {
         margin-bottom: 12px;
         width: 100%;
-       }
+    }
 
-       .input-box.input-box:nth-child(2n){
+    .input-box.input-box:nth-child(2n) {
         justify-content: space-around;
-       }
+    }
 }
-
-
